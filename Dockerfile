@@ -3,7 +3,7 @@ FROM alpine
 RUN apk add git \
         && apk add yarn \
         && git clone https://github.com/DanShR/docker-app-1.git \
-        && cd docker-app-1
+        && cd docker-app-1 \
         && yarn
 
 WORKDIR ./docker-app-1
